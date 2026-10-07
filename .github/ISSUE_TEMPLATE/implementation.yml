@@ -1,0 +1,41 @@
+name: Implementation
+# AIz implementation/configuration work
+description: Install, configure, integrate, or refactor an AIz component.
+title: "[IMPL] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should be implemented or changed?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: In scope, out of scope, and affected node/component.
+    validations:
+      required: true
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Dependencies, prior phases, backups, or approvals required.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable conditions required to close this issue.
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback
+      description: How to restore the previous known-good state.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / documentation
+      description: Expected RUN IDs, reports, ADRs, or docs to update.
