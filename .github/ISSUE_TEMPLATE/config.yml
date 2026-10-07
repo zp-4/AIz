@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: AIz operator workflow
+    url: https://github.com/zp-4/AIz/blob/main/docs/OPERATOR_WORKFLOW.md
+    about: Read the operator workflow before opening an operational issue.
