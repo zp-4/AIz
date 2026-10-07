@@ -1,0 +1,33 @@
+name: Documentation or Publication
+# AIz documentation/publication work
+description: Update the runbook, site, findings, ADRs, or public publication.
+title: "[DOC] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source evidence
+      description: Which accepted docs, RUNs, TEST_REPORTs, FINDINGS, or ADRs support this update?
+    validations:
+      required: true
+  - type: textarea
+    id: pages
+    attributes:
+      label: Files / pages affected
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Publication checks
+      options:
+        - label: No secrets/private repository content are included.
+          required: true
+        - label: Claims do not exceed the evidence strength.
+          required: true
+        - label: Observation, interpretation, and decision remain distinguishable.
+          required: true
