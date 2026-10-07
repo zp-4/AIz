@@ -1,0 +1,9 @@
+inventory/lab.env
+inventory/versions.lock
+**/secrets/*
+!**/secrets/*.example
+site/node_modules/
+site/dist/
+.env
+*.key
+*.pem
