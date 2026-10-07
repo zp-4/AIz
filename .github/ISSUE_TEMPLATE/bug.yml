@@ -1,0 +1,38 @@
+name: Bug or Incident
+# AIz defects and observed incidents
+description: Report a defect, regression, failed test, or operational incident.
+title: "[BUG] "
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What happened? Include exact error text when useful.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: run
+    attributes:
+      label: Related RUN / TEST
+      placeholder: RUN-... / TEST-...
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Node, versions, commit/model hash, configuration, and relevant workload.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, checksums, screenshots, metrics, or artifact paths. Do not paste secrets.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / severity
+      description: Does this invalidate a run, block a phase, or affect production readiness?
