@@ -1,0 +1,13 @@
+# Copy to versions.lock once a candidate is promoted.
+# Use exact releases/commits; avoid "latest".
+llama-swap=
+llama.cpp.commit=
+strata.commit=
+vllm=
+lmstudio=
+multica=
+pi=
+qwen-code=
+opencode=
+rocm=
+kernel=
