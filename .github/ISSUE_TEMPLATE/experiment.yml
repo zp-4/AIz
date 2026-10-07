@@ -1,0 +1,55 @@
+name: Experiment
+# AIz controlled experiment
+description: Plan and track a controlled AIz experiment and its evidence.
+title: "[EXP] "
+body:
+  - type: input
+    id: experiment_id
+    attributes:
+      label: Experiment ID
+      placeholder: EXP-014
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: What precise question should this experiment answer?
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: Expected result before looking at the measurements.
+  - type: textarea
+    id: variables
+    attributes:
+      label: Variables
+      description: Independent variable(s), controlled variables, and known confounders.
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocol / Test IDs
+      description: Link the PROTO-* document and enumerate TEST-* IDs.
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics and acceptance criteria
+      description: Include primary KPI, secondary metrics, hard gates, and repetitions.
+    validations:
+      required: true
+  - type: textarea
+    id: runs
+    attributes:
+      label: Runs
+      description: Add RUN-* IDs as executions complete. Do not paste raw metrics here.
+  - type: textarea
+    id: findings
+    attributes:
+      label: Findings / decision
+      description: Link FINDINGS.md and ADR-* when available. Keep Observation, Interpretation, and Decision separate.
